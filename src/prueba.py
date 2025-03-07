@@ -75,7 +75,7 @@ def mover_abajo():
             tabla_activos.selection_set(index + 1)
 
 def generar_html():
-    with open("/Users/marcelomansilla/proyectos/Workspaces/Radiaficion/MANEJO-RUEDAS-RADIOAFICION/rueda_en_la_cueva.html", "a", encoding="utf-8") as f:
+    with open("/Users/marcelomansilla/proyectos/Workspaces/Radiaficion/MANEJO-RUEDAS-RADIOAFICION/index.html", "a", encoding="utf-8") as f:
         f.write(f"<h1>RUEDA EN LA CUEVA 146480MHZ {fecha_hora_actual}</h1>")
         f.write("<table border='1'><tr><th>Señal Distintiva</th><th>Titular</th><th>Provincia</th><th>Localidad</th><th>Hora Ingreso</th><th>Hora Salida</th></tr>")
         for row in activos + salidos:
